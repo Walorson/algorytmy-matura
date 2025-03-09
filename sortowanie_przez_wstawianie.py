@@ -1,15 +1,17 @@
 tab = [3, 1, 2, 5, 0]
 
 def sortowanie_przez_wstawianie(tab):
-    
-    for i in range(0, len(tab)):
-        if i + 1 
-        while tab[i] > tab[i + 1]:
-            tab[i], tab[i + 1] = tab[i + 1], tab[i]
-            i += 1
+    for i in range(1, len(tab)):
+        klucz = tab[i]
+        j = i - 1
 
-        continue
+        while j >= 0 and klucz < tab[j]:
+            tab[j + 1] = tab[j]
+            j -= 1
+
+        tab[j + 1] = klucz
 
     return tab
+
 
 print(sortowanie_przez_wstawianie(tab))

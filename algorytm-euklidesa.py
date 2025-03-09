@@ -14,5 +14,5 @@ def NWD(a, b):
 def NWW(a, b):
     return int((a * b) / NWD(a, b))
 
-print(NWD(48, 78))
-print(NWW(48, 78))
+print(NWD(14, 49))
+print(NWW(14, 49))
